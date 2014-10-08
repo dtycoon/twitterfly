@@ -25,6 +25,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate,  UITableView
     
     var userProfile: UserProfile!
     var tweets: [Tweet]?
+    var reloadViews: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +61,27 @@ class ProfileViewController: UIViewController, UITableViewDelegate,  UITableView
         // Do any additional setup after loading the view.
         self.tableView.reloadData()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        println("viewDidAppear called on ProfileViewController")
+        if(reloadViews == true)
+        {
+            println("viewDidAppear calling  TweetsieClient ProfileViewController reloadViews = \(reloadViews)")
+            var parameterInt:NSDictionary = ["user_id":userId]
+            
+            TweetsieClient.sharedInstance.userProfileWithParams(parameterInt, completion: { (userProfile, error) -> () in
+                self.userProfile = userProfile
+            })
+            
+            TweetsieClient.sharedInstance.userTimelineWithParams(parameterInt, completion: { (tweets, error) -> () in
+                self.tweets = tweets
+            })
+            
+        }
+        
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

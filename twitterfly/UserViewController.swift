@@ -176,8 +176,14 @@ class UserViewController: UIViewController, UserViewControllerDelegate {
     @IBAction func onTapSidebarButton(sender: UIButton) {
         if(sender == profileButton)
         {
-            var curUser = User.currentUser?.userId
             println("Profile Menu Item")
+            var curUser = User.currentUser?.userId
+
+            if(profileViewController.userId != curUser!)
+            {
+                profileViewController.reloadViews = true
+            }
+            
             
             profileViewController.userId = curUser!
             println("Profile Menu Item currentUser selected = \(curUser!)")
