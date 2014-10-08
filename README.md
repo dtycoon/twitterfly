@@ -2,7 +2,7 @@ twitterfly
 ==========
 
 
-Implemented
+Implemented ->
 -------------
 
 Hamburger menu
@@ -30,7 +30,7 @@ Tapping on a user image should bring up that user's profile page (DONE)
 
 
 
-NOT Implemented
+NOT Implemented ->
 --------------------
 
 Profile page
