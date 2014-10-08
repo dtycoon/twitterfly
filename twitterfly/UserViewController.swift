@@ -179,7 +179,7 @@ class UserViewController: UIViewController, UserViewControllerDelegate {
             println("Profile Menu Item")
             var curUser = User.currentUser?.userId
 
-            if(profileViewController.userId != curUser!)
+            if(profileViewController.userId == nil ||  profileViewController.userId != curUser!)
             {
                 profileViewController.reloadViews = true
             }
