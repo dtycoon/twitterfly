@@ -116,25 +116,30 @@ class TweetDetailViewController: UIViewController, TweetDetailViewControllerDele
             
             if(tweetItem?.favorited == true)
             {
+                favorateButton.tintColor = nil
                 favorateButton.setImage(UIImage(named: "favorite_on.png"),forState: .Normal)
                 favorateButton.tintColor = UIColor.orangeColor()
             }
             else
             {
+                favorateButton.tintColor = nil
                 favorateButton.setImage(UIImage(named: "favorite.png"),forState: .Normal)
-                favorateButton.setImage(UIImage(named: "favorite_hover.png"),forState: .Highlighted)
+//                favorateButton.setImage(UIImage(named: "favorite_hover.png"),forState: .Highlighted)
+                favorateButton.tintColor = UIColor.blackColor()
             }
             replyButton.setImage(UIImage(named: "reply.png"), forState: .Normal)
             
             if(tweetItem?.retweeted == true)
             {
+                retweetButton.tintColor = nil
                 retweetButton.setImage(UIImage(named: "retweet_on.png"), forState: .Normal)
                 retweetButton.tintColor = UIColor.orangeColor()
             }
             else
             {
+                retweetButton.tintColor = nil
                 retweetButton.setImage(UIImage(named: "retweet.png"), forState: .Normal)
-                retweetButton.setImage(UIImage(named: "retweet_hover.png"), forState: .Highlighted)
+                retweetButton.tintColor = UIColor.blackColor()
             }
             
             
