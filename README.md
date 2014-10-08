@@ -54,5 +54,5 @@ Include a plus button to Add an Account
 
 Swipe to delete an account
 
-![alt tag](https://raw.github.com/dtycoon/tweetsie/master/twitterflyVideo.gif)
+![alt tag](https://raw.github.com/dtycoon/twitterfly/master/twitterflyVideo.gif)
 
