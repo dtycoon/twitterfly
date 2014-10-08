@@ -1,13 +1,13 @@
 twitterfly
 ==========
 
-**************
+
 Implemented
-**************
+-------------
 
 Hamburger menu
-
 --------------
+
 Dragging anywhere in the view should reveal the menu. (DONE)
 
 The menu should include links to your profile, the home timeline, and the mentions view. (DONE)
@@ -16,7 +16,6 @@ The menu can look similar to the LinkedIn menu below or feel free to take libert
 
 
 Profile page
-
 -------------
 
 Contains the user header view (DONE)
@@ -25,15 +24,14 @@ Contains a section with the users basic stats: # tweets, # following, # follower
 
 
 Home Timeline
-
 --------------------
 
 Tapping on a user image should bring up that user's profile page (DONE)
 
 
-***************
+
 NOT Implemented
-***************
+--------------------
 
 Profile page
 -----------------
