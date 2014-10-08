@@ -233,15 +233,18 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lu5-zh-pFX">
                                                     <rect key="frame" x="8" y="8" width="584" height="100"/>
                                                     <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="biA-Pq-J40">
+                                                            <rect key="frame" x="0.0" y="0.0" width="584" height="100"/>
+                                                        </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qjt-sh-ZFK">
-                                                            <rect key="frame" x="272.5" y="10" width="40" height="40"/>
+                                                            <rect key="frame" x="272" y="10" width="40" height="40"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="40" id="cRK-OQ-Deu"/>
                                                                 <constraint firstAttribute="height" constant="40" id="wtI-bl-JXo"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW1-Vv-oim">
-                                                            <rect key="frame" x="242" y="66" width="100" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aW1-Vv-oim">
+                                                            <rect key="frame" x="274" y="56" width="36" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="M1i-14-vv4"/>
                                                                 <constraint firstAttribute="width" constant="100" id="Q1S-ir-MSa"/>
@@ -256,8 +259,8 @@
                                                                 </mask>
                                                             </variation>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="screenname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVV-Q3-VnN">
-                                                            <rect key="frame" x="242" y="78" width="100" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="screenname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVV-Q3-VnN">
+                                                            <rect key="frame" x="253" y="78" width="78.5" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="2bw-Fr-qZw"/>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="LPF-Mg-PhM"/>
@@ -273,10 +276,14 @@
                                                             </variation>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="centerX" secondItem="wVV-Q3-VnN" secondAttribute="centerX" id="2Bl-ht-Q2f"/>
+                                                        <constraint firstItem="biA-Pq-J40" firstAttribute="top" secondItem="lu5-zh-pFX" secondAttribute="top" id="5SO-xN-7Ji"/>
+                                                        <constraint firstItem="biA-Pq-J40" firstAttribute="leading" secondItem="lu5-zh-pFX" secondAttribute="leading" id="L3F-bP-er6"/>
                                                         <constraint firstItem="Qjt-sh-ZFK" firstAttribute="top" secondItem="lu5-zh-pFX" secondAttribute="top" constant="10" id="MvX-vL-t0C"/>
+                                                        <constraint firstAttribute="trailing" secondItem="biA-Pq-J40" secondAttribute="trailing" id="S0V-Hq-5K3"/>
+                                                        <constraint firstAttribute="bottom" secondItem="biA-Pq-J40" secondAttribute="bottom" id="SkJ-BB-JlB"/>
                                                         <constraint firstAttribute="centerX" secondItem="Qjt-sh-ZFK" secondAttribute="centerX" id="YwU-9y-RpT"/>
                                                         <constraint firstAttribute="height" constant="100" id="ZP9-Rh-agc"/>
                                                         <constraint firstItem="wVV-Q3-VnN" firstAttribute="top" secondItem="aW1-Vv-oim" secondAttribute="bottom" constant="5" id="uTA-7r-8Qd"/>
@@ -446,6 +453,7 @@
                                             <outlet property="totalTweets" destination="2Pg-Ry-1V4" id="CLE-Jd-yVM"/>
                                             <outlet property="tweetUser" destination="aW1-Vv-oim" id="eK6-cd-qh6"/>
                                             <outlet property="tweetUserSN" destination="wVV-Q3-VnN" id="yjR-7h-3B5"/>
+                                            <outlet property="userBannerImageView" destination="biA-Pq-J40" id="16H-3P-AsJ"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" restorationIdentifier="TweetCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetCell" rowHeight="164" id="D7O-zr-f6i" customClass="TweetCell" customModule="twitterfly" customModuleProvider="target">

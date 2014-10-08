@@ -166,8 +166,12 @@ class ProfileViewController: UIViewController, UITableViewDelegate,  UITableView
             {
                 cellProfile.tweetUser.text = userProfile.name
                 cellProfile.tweetUserSN.text = userProfile.screenname
+                cellProfile.tweetUser.textColor = UIColor(hexString: userProfile.profile_text_color)
+                cellProfile.tweetUserSN.textColor = UIColor(hexString: userProfile.profile_text_color)
+
                 cellProfile.profileUserImage.setImageWithURL(NSURL(string: (userProfile.profileImageUrl)!))
-                var totalTweets = userProfile.statuses_count!
+                cellProfile.userBannerImageView.setImageWithURL(NSURL(string: (userProfile.profile_background_image_url)!))
+                                var totalTweets = userProfile.statuses_count!
                 var totalFollowing = userProfile.friends_count!
                 var totalFriends = userProfile.followers_count!
                 cellProfile.totalTweets.text = "\(totalTweets)"

@@ -13,6 +13,7 @@ class UserProfileCell: UITableViewCell {
     @IBOutlet weak var profileUserImage: UIImageView!
     @IBOutlet weak var profileUserBackground: UIView!
     
+    @IBOutlet weak var userBannerImageView: UIImageView!
     @IBOutlet weak var tweetUser: UILabel!
     @IBOutlet weak var tweetUserSN: UILabel!
     @IBOutlet weak var totalTweets: UILabel!

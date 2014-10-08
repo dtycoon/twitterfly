@@ -23,13 +23,16 @@ PODS:
   - BDBOAuth1Manager (1.4.1):
     - AFNetworking/NSURLConnection (~> 2.4.0)
     - AFNetworking/NSURLSession (~> 2.4.0)
+  - EDHexColor (0.0.1)
 
 DEPENDENCIES:
   - AFNetworking
   - BDBOAuth1Manager
+  - EDHexColor
 
 SPEC CHECKSUMS:
   AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
   BDBOAuth1Manager: 0625ba20bd7d36461bbf6dc3d29276b5932b7409
+  EDHexColor: 1593003ed93fdd7680949fa6206212ce05ad58a5
 
 COCOAPODS: 0.33.1
