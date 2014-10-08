@@ -36,7 +36,7 @@ NOT Implemented
 ***************
 
 Profile page
--------------
+-----------------
 
 Optional: Implement the paging view for the user description. 
 
@@ -46,6 +46,7 @@ Optional: Pulling down the profile page should blur and resize the header image.
 
 
 Optional: Account switching
+-----------------------------
 
 Long press on tab bar to bring up Account view with animation
 
